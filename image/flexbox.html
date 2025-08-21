@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .red {
+        background-color: red;
+      }
+      .green {
+        background-color: green;
+      }
+      .yellow {
+        background-color: yellow;
+      }
+      .apple {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bananna {
+        display: flex;
+        justify-content: space-around;
+      }
+      h1 {
+        font-size: 10px;
+        display: inline;
+      }
+      /* span {
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Example</h1>
+    <div class="apple">
+      <div class="box red">
+        <h1>Hello world from <span>fjsdklafjlks</span></h1>
+      </div>
+      <div class="box yellow"></div>
+      <div class="box green"></div>
+    </div>
+    <div class="bananna">
+      <div class="box red"></div>
+      <div class="box yellow"></div>
+      <div class="box green"></div>
+    </div>
+  </body>
+</html>
+ 

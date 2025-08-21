@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Traffic Light</title>
+  <style>
+    .traffic-light {
+      width: 100px;
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .light {
+      width: 60px;
+      height: 60px;
+      margin: 10px auto;
+      border-radius: 50%;
+      background-color: gray;
+      transition: background-color 0.3s;
+    }
+
+    #red.active { background-color: red; }
+    #yellow.active { background-color: yellow; }
+    #green.active { background-color: green; }
+  </style>
+</head>
+<body>
+
+  <div class="traffic-light">
+    <div id="red" class="light"></div>
+    <div id="yellow" class="light"></div>
+    <div id="green" class="light"></div>
+  </div>
+
+  <button onclick="changeLight()">Change Light</button>
+
+  <script>
+    const lights = ['red', 'yellow', 'green'];
+    let current = 0;
+
+    function changeLight() {
+      // Remove 'active' class from all lights
+      lights.forEach(id => {
+        document.getElementById(id).removeAttribute('class');
+        document.getElementById(id).setAttribute('class', 'light');
+      });
+
+      // Add 'active' class to the current light
+      const currentLight = document.getElementById(lights[current]);
+      currentLight.setAttribute('class', 'light active');
+
+      // Move to the next light in the cycle
+      current = (current + 1) % lights.length;
+    }
+  </script>
+
+</body>
+</html>

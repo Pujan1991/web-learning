@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>javascript DOM ManipulatioN</h1>
+
+<body>
+    <div id="content">
+        <h2>Hello <em>World</em></h2>
+    </div>
+    <div id="content">
+        <h2>Hello <em>World</em></h2>
+    </div>
+
+    <div id="container">
+        <p> Hello my name is Pujan and i ma practising Javascript</p>
+    </div>
+
+    <div>
+        <button id="myBtn">Button C</button>
+    </div>
+
+    <div id="hover-item">
+        <h1>Clickonherefor Info</h1>
+    </div>
+
+    <div id="hovereditem">
+        <h1>Hi, How are you</h1>
+    </div>
+    
+    <div id="box" bg-black-200 px-4 py- 5 width-10 height-5 text-center flex-items-center justify-center>
+       <p>Hello back ground color change</p>
+    </div>
+    <script>
+        let myTitle = document.getElementById("myTitle");
+        console.log(myTitle);
+
+        let firstParagraph = document.querySelector("p");
+        console.log(firstParagraph);
+
+
+        let content = document.getElementById("content");
+        content.innerHTML = "<h2>Hello <em>World</em></h2>";
+        content.innerText = "<h2>Hello <em>World</em></h2>";
+
+     
+
+       function updateTextById(elementId, newtext){
+        let element = document.getElementById(elementId);
+
+        if (element){
+            element.textcontent = newtext;
+        }}
+
+       updateTextById("Hello", "world");
+
+
+        let txt = document.getElementById("status");
+        if (txt) {
+            let currenttext = txt.textContent;
+            txt.textContent = currenttext + "-Updated";
+        };
+
+
+        let contatiner = document.getElementById("container");
+        container.innerHTML = `<h1>MY NAME</h1>
+            <title>javascript</title>`;
+
+        let myBtn = document.getElementById("myBtn");
+        let title = "Button";
+        myBtn.addEventListener("click", function () {
+            console.log("Button Clicked");
+
+        });
+
+
+        let hoverItem = document.getElementById("hover-item");
+        let hoverItemText = "Hello";
+        hoverItem.itemText = hoverItemText;
+
+        hoverItem.addEventListener("mouseover", function () {
+            hoverItem.style.backgroundColor = "yellow";
+        });
+
+        let hoverItem1 = document.getElementById("hovereditem");
+        let hoverText = "HI, How are you";
+        hoverItem1.textContent = hoverText;
+        hoverItem1.addEventListener("mouseenter", function(){
+            hoverItem1.style.backgroundColor = "blue";
+        });
+        hoverItem1.addEventListener("mouseleave", function(){
+            hoverItem1.style.backgroundColor = "black";
+        });
+
+
+       let box = document.getElementById("box");
+        box.style.backgroundColor = "red";
+
+    </script>
+
+</body>
+
+</html>

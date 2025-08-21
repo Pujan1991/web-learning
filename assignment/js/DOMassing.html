@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="box">
+    <button id="login">login</button>
+    </div>
+
+    <div id ="container">
+      <p> Hello my name is Pujan and i ma practising Javasce</p>
+    </div>
+ <script>
+      //access
+      let box = document.getElementById("box");
+      let title = "Submit";
+      let description ="Goal of the class is to teach DOM Manipulation";
+      box.innerHTML = `<h1>Hello World</h1>
+      <p>${description}</p>
+      <button> ${title} </button>
+      <a href="www.google.com">Go to Google</a>`;
+      
+      let loginbutton = document.getElementById("login");
+    
+    //   anonymos function 
+      loginButton.addEventListener("Click", function() {
+        loginButton.innerText = "Logged In";
+        console.log("hello world");
+
+      });
+    
+      </script>
+</body>
+</html>

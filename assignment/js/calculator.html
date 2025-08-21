@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+    <h1 class="text-2xl font-bold text-center mb-6">Tip Calculator</h1>
+
+    <div class="space-y-4">
+      <!-- Bill Amount -->
+      <div>
+        <label class="block font-medium mb-1">Bill Amount</label>
+        <input type="number" placeholder="Enter bill amount"
+               class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:border-blue-400" />
+      </div>
+
+      <!-- Tip Percentage -->
+      <div>
+        <label class="block font-medium mb-1">Tip Percentage (%)</label>
+        <input type="number" placeholder="e.g. 10"
+               class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:border-blue-400" />
+      </div>
+
+      <!-- Number of Persons -->
+      <div>
+        <label class="block font-medium mb-1">Number of Persons</label>
+        <input type="number" placeholder="Split between how many?"
+               class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring focus:border-blue-400" />
+      </div>
+
+      <!-- Calculate Button -->
+      <button
+        class="w-full bg-green-600 text-white font-semibold py-2 rounded hover:bg-blue-700 transition">
+        Calculate
+      </button>
+    </div>
+
+    <!-- Placeholder for result -->
+    <div class="mt-6">
+      <p class="text-lg font-medium">Tip Amount:<span class="font-bold">0.00</span></p>
+      <p class="text-lg font-medium mt-2">Total per Person:<span class="font-bold">0.00</span></p>
+    </div>
+  </div>
+</body>
+</html>

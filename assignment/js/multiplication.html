@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <section>
+  <div class="bg-yellow-300 p-6 rounded-xl shadow-md w-full max-w-sm text-center">
+    <p class="mt-4 text-green-600 text-sm text-right mb-2">Score:1</p>
+    <h1 class="text-xl font-bold mb-4">What is 5 multiply by 3?
+    </h1>
+
+    <input id = "answer"
+      type="number"
+      placeholder="15"
+      class="w-full border border-gray-300 rounded px-4 py-2 mb-4 text-center"
+    />
+
+    <button id = "submit"
+      class="w-full bg-green-600 text-white py-2 rounded">
+      Submit
+    </button>
+
+  </div>
+  </section>
+  <script>
+      var btn = document.getElementById("submit");
+      var answer = document.getElementById("answer");
+ 
+      btn.addEventListener("click", function () {
+        if (answer.value === "15") {
+          alert("Correct!");
+          answer.value = "";
+        } else {
+          alert("Incorrect, try again.");
+        }
+      });
+    console.log("btn", btn, answer)
+
+  </script>
+</body>
+</html>

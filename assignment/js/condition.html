@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=width= "h1", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Conditional Statement</h1>
+    <script>
+        // operator 
+        var age = 10;
+        if (age < 20) {
+        console.log("You are a teenager");
+        } else {
+        console.log("you aer an adult");
+        }
+
+        var a = 10;
+        var b = 30;
+        var sum = a = b;
+        // if else statement 
+        if (sum > 20) {
+         console.log("sum is greater than 20");
+        } else {
+         console.log("sum is less than 20");
+        }
+
+        // check if sum equals to 30
+        if(sum == 30){
+            console.log('sum is equal to 30');
+        }else{
+            console.log('sum is not equal to 30');
+        }
+
+        // find the largest number along two different numbers 
+        var num1 = 15;
+        var num2 = 25;
+
+        if (num1 > num2) {
+            console.log("num1 is greater");
+        } else {
+            console.log("num2 is greater");
+        }
+
+        // check if give number is even or odd 
+        var number = 16;
+        if (number % 2 == 0) {
+            console.log("The number is even");
+        } else {
+            console.log("The number is odd");
+        }
+        
+        // == used to compare two var 
+        // check the largest among three different numbers
+        
+        var num1 = 10;
+        var num2 = 20;
+        var num3 = 30;
+        if(num1 > num2 && num1 > num3){
+            console.log("number is the largest number");
+        }else if(num2 > num3) {
+            console.log("number2 is the largest number");
+        }else {
+            console.log("number3 is the largest number");
+        }
+
+        // check if a number is positive, negative, or zero 
+        var num = 1;
+        if (num > 0){
+            console.log("the number is positive");
+        }else if(num1 < 0){
+            console.log("the number is negative");
+        }else {
+            console.log("the number is zero");
+        }
+        
+
+        // Checking the numerical grade 
+        var marks = 85;
+        if (marks > 90 && marks < 100){
+        console.log("The grade is A");
+        }else if(marks >= 80 && marks <= 89){
+            console.log("The grade is B");
+        }else if(marks >= 70 && marks <= 79){
+            console.log("The grade is C");
+        }else if(marks >= 60 && marks <= 69){
+            console.log("The grade is d");
+        }else{
+            console.log("The grade is E");
+        }
+        
+        // Age Checker 
+        var age = 25;
+        if (age > 0 && age < 10){
+            console.log("This is a Child");
+        }else if(age >= 11 && age <= 19){
+            console.log("This is a Teen");
+        }else if(age >= 20 && age <= 64){
+            console.log("This is an Adult")
+        }else{
+            console.log("This is a Senior");
+        }
+
+    //    number checker t or f 
+    var num = 0;
+    if (num >= 1 && num <= 100){
+        console.log("The function is True");
+    }else{
+        console.log("The function is False");
+    }
+    
+    // discount 
+    var purchase = 80;
+    if(purchase >= 50 && purchase <= 99){
+     console.log("The discount is 5%");
+    }else if(purchase >= 100 && purchase <= 199){
+        console.log("The discount is 10%");
+    }else if(purchse >= 200){
+        console.log("The discount is 15%");
+    }else{
+        console.log("No discount");
+    }
+    
+    // temp 
+    var temp = 50;
+    if(temp < 0){
+        console.log("The temp is freezing");
+    }else if(temp >= 0 && temp <= 15){
+        console.log("The temp is cold");
+    }else if(temp >= 16 && temp <=25){
+        console.log("The temp is mild");
+    }else if(temp >=26 && temp <=35){
+        console.log("The temp is Warm")
+    }else{
+        console.log("The temp is hot");
+    }
+    
+    // divisible 
+    var num = 42;
+    if (num % 3 === 0 && num % 5 === 0){
+    console.log("The num is FizzBuzz");
+    }else if(num % 3 === 0){
+    console.log("The number is Fizz");
+    }else if (num % 5 === 0){
+        console.log("The number is Buzz");
+    }
+    else {
+        console.log("num")
+    }
+    
+    var speed = 10;
+    if(speed >= 1 && speed <=10){
+        console.log("Warning");
+    }else if(speed > 10){
+        console.log("Ticket");
+    }else {
+        console.log("Safe");
+    }
+
+    var BMI = 20;
+    if (BMI < 18.5){
+        console.log("Underweight");
+    }else if (BMI >= 18.5 && BMI <= 24.9){
+        console.log("Normal");
+    }else if (BMI >= 25 && BMI <= 29.9){
+        console.log("Overweight");
+    }else if (BMI >= 30){
+        console.log("obese");
+    }
+    </script>
+</body>
+</html>

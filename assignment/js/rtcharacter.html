@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Time Character Counter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#ff7f6b]">
+    <section class="m-60">
+      <div class="bg-[#fca5a5] shadow-lg mx-auto p-5 rounded-[10px] container">
+        <form action="#">
+          <div>
+            <h1 class="mb-4 font-semibold text-black text-3xl text-center">
+              Real Time Character Counter
+            </h1>
+ 
+            <div>
+              <textarea
+                name="description"
+                id="description"
+                placeholder="Nice job!"
+                maxlength="50"
+                class="block bg-white m-[10px] p-[10px] border-[1px] rounded-sm w-full text-[#ccc]"
+              ></textarea>
+              <div>
+                <p>Total Character:9 Remaining:<span>41</span></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script>
+      console.log("hello world");
+    </script>
+  </body>
+</html>

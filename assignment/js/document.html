@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">DOM Manipulation</h1>
+    <p>
+      Document Object Model
+ 
+      <span>Manipulation</span>
+    </p>
+    <div>
+      <h1 id="heading1">Heading 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
+        explicabo!
+      </p>
+      <button>Click me</button>
+    </div>
+ 
+    <script>
+      //access
+      let a = document.getElementById("heading");
+      let message = "hello world";
+      let message1 = "hello world";
+      let message2 = `hello world`; //template string ,literal
+      a.style.color = "blue";
+      a.style.fontSize = "100px";
+      a.style.textDecoration = "underline";
+ 
+      a.innerText = "Document Object Model Manipulation";
+      a.innerHTML = `DOM Manipulation
+      <span>Completed</span>
+      <b>test</b>
+      <button>Click me</button>`;
+ 
+      let b = document.getElementById("heading1");
+      console.log(a, b);
+    </script>
+  </body>
+</html>
