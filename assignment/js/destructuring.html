@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Destructuring Object & Array</h1>
+    <script>
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York",
+            address: "123 Main St Apt 4B",
+            phoneNo: "123-456-7890",
+        };
+
+        // Destructuring the object
+        let { name, age, city } = person;
+        console.log(name, age, city); // John
+
+        // do above instead of below
+        // let name = person.name;
+        // let age = person.age;
+        // let city = person.city;
+    </script>
+</body>
+
+</html>

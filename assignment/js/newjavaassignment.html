@@ -31,9 +31,9 @@
     <div id="hovereditem">
         <h1>Hi, How are you</h1>
     </div>
-    
+
     <div id="box" bg-black-200 px-4 py- 5 width-10 height-5 text-center flex-items-center justify-center>
-       <p>Hello back ground color change</p>
+        <p>Hello back ground color change</p>
     </div>
     <script>
         let myTitle = document.getElementById("myTitle");
@@ -47,16 +47,17 @@
         content.innerHTML = "<h2>Hello <em>World</em></h2>";
         content.innerText = "<h2>Hello <em>World</em></h2>";
 
-     
 
-       function updateTextById(elementId, newtext){
-        let element = document.getElementById(elementId);
 
-        if (element){
-            element.textcontent = newtext;
-        }}
+        function updateTextById(elementId, newtext) {
+            let element = document.getElementById(elementId);
 
-       updateTextById("Hello", "world");
+            if (element) {
+                element.innerText = newtext;
+            }
+        }
+
+        updateTextById("Hello", "world");
 
 
         let txt = document.getElementById("status");
@@ -89,19 +90,19 @@
         let hoverItem1 = document.getElementById("hovereditem");
         let hoverText = "HI, How are you";
         hoverItem1.textContent = hoverText;
-        hoverItem1.addEventListener("mouseenter", function(){
+        hoverItem1.addEventListener("mouseenter", function () {
             hoverItem1.style.backgroundColor = "blue";
         });
-        hoverItem1.addEventListener("mouseleave", function(){
+        hoverItem1.addEventListener("mouseleave", function () {
             hoverItem1.style.backgroundColor = "black";
         });
 
 
-       let box = document.getElementById("box");
+        let box = document.getElementById("box");
         box.style.backgroundColor = "red";
 
     </script>
 
 </body>
 
-</html>
+</html>git 

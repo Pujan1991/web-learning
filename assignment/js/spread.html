@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Learning Spread Operator in JS</h1>
+    <script>
+        let car = {
+            name: "Toyota",
+            model: "Corolla",
+            year: 2020,
+        };
+
+        let engine = {
+            type: "V6",
+            horsepower: 300,
+        };
+
+        //combine car and engine object
+        let carWithEngine = { ...car, ...engine };
+
+        let carYearChanged = {
+            ...car,
+            year: 2021,
+            model: "EV",
+        };
+        console.log(carYearChanged);
+        console.log(carWithEngine);
+    </script>
+</body>
+
+</html>
